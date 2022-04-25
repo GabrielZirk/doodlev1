@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const https = require("https");
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.get("/", (req, res) => {
 
 
 app.post("/", (req, res) => {
+  console.log(req.body)
   let name = req.body.name;
 
   if (!names.includes(name)) {
@@ -54,8 +56,6 @@ app.post("/", (req, res) => {
 
   res.redirect("/");
 });
-
-
 
 app.listen(process.env.PORT || 3000, () => {
   console.log("Server is running.")
