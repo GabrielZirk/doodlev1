@@ -16,6 +16,11 @@ body {
   background: rgb(148, 187, 233);
   background: linear-gradient(0deg, rgba(148, 187, 233, 1) 0%, rgba(237, 200, 216, 1) 100%);
   padding-top: 2rem;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 }
 
 button {
@@ -65,12 +70,12 @@ h1 {
   border: dashed 3px;
 }
 
-input:checked ~ .dateButton {
+input:checked~.dateButton {
   background-color: green;
 }
 
 input {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 input[type="text"] {
@@ -87,9 +92,9 @@ label {
 }
 
 .invisibleCheckbox {
-display: None;
+  display: None;
 }
 
 .top-buffer {
-  margin-top:20px;
+  margin-top: 20px;
 }
