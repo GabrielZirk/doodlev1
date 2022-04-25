@@ -4,8 +4,8 @@ const https = require("https");
 
 const app = express();
 
-let names = ["Gabi"];
-let codes = [1];
+let names = [];
+let codes = [];
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
