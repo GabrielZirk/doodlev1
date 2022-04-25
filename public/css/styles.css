@@ -1,0 +1,64 @@
+HTML, body {
+margin: 0px;
+padding: 0px;
+  border: 0px;
+}
+
+html {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+body {
+  background: linear-gradient(90deg, rgba(148,187,233,1) 0%, rgba(237,200,216,1) 100%);
+  padding-top: 2rem;
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  border-style: dashed;
+  font-size: 1.5rem;
+}
+
+table {
+  margin: 0 auto 0 auto;
+  border: 2px dashed;
+  width: 800px;
+  table-layout: fixed;
+}
+
+td {
+  text-align: center;
+  padding: 1rem;
+}
+
+.name {
+  width: 250px;
+}
+
+th {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+input.checkbox {
+  width: 20px;
+  height: 20px;
+  border-style: dashed;
+}
+
+input.textbox {
+  height: 20px;
+}
+
+.fa-solid {
+  color: white;
+}

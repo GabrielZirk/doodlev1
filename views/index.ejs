@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Birthday-Brunch Doodle</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/ad0cd36da9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>&#129395; Birthday-Brunch Doodle &#127881;</h1>
+  <h2>Bitte sag mir wer du bist & ob du Zeit hast &#128525;</h2>
+  <h2>Startzeit is jeweils um 11h</h2>
+
+  <form class="" action="/" method="post">
+    <table>
+      <thead>
+        <tr>
+          <th class="name">Name</th>
+          <th>Samstag 30.04.22</th>
+          <th>Sonntag 01.05.22</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name">
+            <input type="text" name="name" autocomplete="off" class="textbox" required />
+          </td>
+          <td>
+            <input type="checkbox" name="sat" class="checkbox">
+          </td>
+          <td>
+            <input type="checkbox" name="sun" class="checkbox">
+          </td>
+          <td>
+            <button type="submit" name="submit">+</button>
+          </td>
+        </tr>
+      </tbody>
+    </table </form>
+
+    <h2>Wer hat bis jetzt aller zu-/abgesagt?</h2>
+    <table>
+      <% for (let i = 0; i < names.length; i ++) { %>
+      <tr>
+        <td class="name">
+          <%= names[i] %>
+        </td>
+        <td>
+          <i class="fa-solid fa-pie"></i>
+        </td>
+        <td>
+          <i class="fa-solid fa-pie"></i>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <% }; %>
+    </table </body>
+</html>
